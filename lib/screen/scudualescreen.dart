@@ -31,6 +31,8 @@ class _ScudualescreenState extends State<Scudualescreen> {
            ),
             SizedBox(height: 20,),
             Container(
+
+
               padding: EdgeInsets.all(10),
               margin: EdgeInsets.symmetric(horizontal: 10),
               decoration: BoxDecoration(
@@ -54,7 +56,7 @@ class _ScudualescreenState extends State<Scudualescreen> {
 
                       ),
                       child: Text("UpComeing",style: TextStyle(
-                        fontSize: 16,
+                        fontSize: 12,
                         fontWeight: FontWeight.w500,
                       ),),
                     ),
@@ -68,12 +70,12 @@ class _ScudualescreenState extends State<Scudualescreen> {
                     child: Container(
                       padding: EdgeInsets.symmetric(horizontal: 25,vertical: 10),
                       decoration: BoxDecoration(
-                        color: buttonindex==0?Colors.blue:Colors.transparent,
+                        color: buttonindex==1?Colors.blue:Colors.transparent,
                         borderRadius: BorderRadius.circular(10),
 
                       ),
                       child: Text("Complete",style: TextStyle(
-                        fontSize: 16,
+                        fontSize: 12,
                         fontWeight: FontWeight.w500,
                       ),),
                     ),
@@ -87,12 +89,12 @@ class _ScudualescreenState extends State<Scudualescreen> {
                     child: Container(
                       padding: EdgeInsets.symmetric(horizontal: 25,vertical: 10),
                       decoration: BoxDecoration(
-                        color: buttonindex==0?Colors.blue:Colors.transparent,
+                        color: buttonindex==2?Colors.blue:Colors.transparent,
                         borderRadius: BorderRadius.circular(10),
 
                       ),
                       child: Text("Cancell",style: TextStyle(
-                        fontSize: 16,
+                        fontSize: 12,
                         fontWeight: FontWeight.w500,
                       ),),
                     ),

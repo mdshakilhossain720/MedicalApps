@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medicalapps/screen/home_screen.dart';
 
 import 'login_screen.dart';
 import 'nav_routs.dart';
@@ -56,7 +57,7 @@ class WelcomeScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10),
                   child: InkWell(
                     onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginScreen()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>NabRouts()));
                     },
                     child: Padding(padding: EdgeInsets.symmetric(horizontal: 40,vertical: 15),
                       child: Text("Login",style: TextStyle(

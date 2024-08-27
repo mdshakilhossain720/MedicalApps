@@ -1,6 +1,8 @@
 
 import 'package:flutter/material.dart';
 
+import 'chat_screen.dart';
+
 class MessageScreen extends StatefulWidget {
   const MessageScreen({super.key});
 
@@ -137,6 +139,15 @@ class _MessageScreenState extends State<MessageScreen> {
               );
             }),
           ),
+          SizedBox(height: 15,),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20.0),
+            child: Text("Recent Chat",style: TextStyle(
+              fontSize: 20,
+
+            ),),
+          ),
+         // SizedBox(height: 20,),
 
           ListView.builder(
             itemCount: image.length,
@@ -146,7 +157,9 @@ class _MessageScreenState extends State<MessageScreen> {
               itemBuilder: (context,index){
             return ListTile(
               minVerticalPadding: 20,
-              onTap: (){},
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (_)=>ChatScreen()));
+              },
               leading: CircleAvatar(
                 radius: 25,
                 backgroundImage: AssetImage(image[index]),
